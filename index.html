@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KnotQ is a structured planning and calendar app where documents, tasks, and schedules share one model.">
+  <meta name="robots" content="index,follow">
+  <title>KnotQ</title>
+  <link rel="canonical" href="https://knotq.com/">
+  <meta property="og:site_name" content="KnotQ">
+  <meta property="og:title" content="KnotQ">
+  <meta property="og:description" content="A structured planning and calendar app where documents, tasks, and schedules share one model.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://knotq.com/">
+  <meta property="og:image" content="https://knotq.com/img/knotq-icon.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="KnotQ">
+  <meta name="twitter:description" content="A structured planning and calendar app where documents, tasks, and schedules share one model.">
+  <link rel="icon" type="image/png" href="/img/knotq-icon.png">
+  <link rel="apple-touch-icon" href="/img/knotq-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <img src="/img/knotq-icon.png" alt="">
+      <span>KnotQ</span>
+    </a>
+    <nav class="top-links" aria-label="primary">
+      <a href="#model">Model</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#download">Download</a>
+    </nav>
+    <a class="github-link" href="https://github.com/knotq-app/knotq-app">GitHub</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">documents for time</p>
+        <h1>KnotQ</h1>
+        <p class="lead">KnotQ makes documents and calendars part of the same model: each line can stay a note, become a task, or schedule itself without leaving the editor.</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="https://github.com/knotq-app/knotq-app/releases">Download</a>
+          <a class="secondary-action" href="https://github.com/knotq-app/knotq-app">View source</a>
+        </div>
+      </div>
+
+      <figure class="product-shot" aria-label="KnotQ app interface mockup">
+        <div class="app-window">
+          <div class="window-bar">
+            <span></span><span></span><span></span>
+            <strong>Research</strong>
+          </div>
+          <div class="app-layout">
+            <aside class="mock-sidebar">
+              <div class="mock-folder active">Daily</div>
+              <div class="mock-folder research">Research</div>
+              <div class="mock-folder chores">Chores</div>
+              <div class="mock-folder classes">Classes</div>
+            </aside>
+            <section class="mock-editor">
+              <div class="line checked"><span></span>Outline introduction</div>
+              <div class="line event"><span></span>Meet professor <time>Thu 5:00 PM</time></div>
+              <div class="line child"><span></span>Bring notes from last experiment</div>
+              <div class="line assignment"><span></span>Essay revision <time>Fri 11:00 PM</time></div>
+              <div class="line reminder"><span></span>Send lab email <time>Tomorrow</time></div>
+              <div class="line"><span></span>Draft related work section</div>
+            </section>
+            <aside class="mock-upcoming">
+              <h2>Upcoming</h2>
+              <div class="upcoming-row event">5:00 Meet professor</div>
+              <div class="upcoming-row assignment">11:00 Essay revision</div>
+              <div class="upcoming-row reminder">Tomorrow Send lab email</div>
+            </aside>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <section class="model-strip" id="model">
+      <article>
+        <p class="eyebrow">schemes</p>
+        <h2>Write first, structure as needed.</h2>
+        <p>Schemes are planning documents with hierarchy, checkboxes, notes, and inline calendar metadata.</p>
+      </article>
+      <article>
+        <p class="eyebrow">calendar items</p>
+        <h2>Dates define behavior.</h2>
+        <p>Start and end dates turn lines into events, assignments, or reminders while keeping their source text intact.</p>
+      </article>
+      <article>
+        <p class="eyebrow">background work</p>
+        <h2>Sleep until something matters.</h2>
+        <p>Notification and completion services react to document changes, then hand scheduling to the operating system.</p>
+      </article>
+    </section>
+
+    <section class="calendar-band" id="calendar">
+      <div>
+        <p class="eyebrow">calendar</p>
+        <h2>A calendar that points back to the plan.</h2>
+        <p>Events, assignments, and reminders render on the calendar, but every item can jump back to the original line where the context lives.</p>
+      </div>
+      <div class="week-grid" aria-hidden="true">
+        <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span>
+        <div class="event-block math">Math 15</div>
+        <div class="event-block lab">Lab sync</div>
+        <div class="event-block essay">Essay due</div>
+        <div class="event-block chores">Laundry</div>
+      </div>
+    </section>
+
+    <section class="download-band" id="download">
+      <div>
+        <p class="eyebrow">desktop</p>
+        <h2>KnotQ for macOS</h2>
+        <p>Builds are published from tagged GitHub releases.</p>
+      </div>
+      <a class="primary-action" href="https://github.com/knotq-app/knotq-app/releases">Releases</a>
+    </section>
+  </main>
+</body>
+</html>
