@@ -1,0 +1,16 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">KnotQ logo</title>
+  <desc id="desc">An orange mathematical knot forming a Q shape.</desc>
+  <rect width="256" height="256" rx="52" fill="#FFF4E9"/>
+  <path d="M128 49C81 49 49 82 49 128C49 174 81 207 128 207C175 207 207 174 207 128C207 82 175 49 128 49Z" stroke="#2A211A" stroke-width="17" stroke-linecap="round"/>
+  <path d="M172 172L213 214" stroke="#2A211A" stroke-width="17" stroke-linecap="round"/>
+  <path d="M74 129C87 104 104 92 128 92C152 92 169 104 182 129" stroke="#E66F1F" stroke-width="19" stroke-linecap="round"/>
+  <path d="M182 127C169 152 152 164 128 164C104 164 87 152 74 127" stroke="#E66F1F" stroke-width="19" stroke-linecap="round"/>
+  <path d="M94 91C115 75 141 75 162 91" stroke="#B94E12" stroke-width="12" stroke-linecap="round"/>
+  <path d="M94 165C115 181 141 181 162 165" stroke="#B94E12" stroke-width="12" stroke-linecap="round"/>
+  <path d="M74 129C87 104 104 92 128 92" stroke="#FFF4E9" stroke-width="23" stroke-linecap="round"/>
+  <path d="M74 129C87 104 104 92 128 92" stroke="#E66F1F" stroke-width="19" stroke-linecap="round"/>
+  <path d="M128 164C152 164 169 152 182 127" stroke="#FFF4E9" stroke-width="23" stroke-linecap="round"/>
+  <path d="M128 164C152 164 169 152 182 127" stroke="#E66F1F" stroke-width="19" stroke-linecap="round"/>
+  <circle cx="128" cy="128" r="13" fill="#FFF4E9" stroke="#2A211A" stroke-width="9"/>
+</svg>
