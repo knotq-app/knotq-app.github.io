@@ -726,11 +726,9 @@ p.support {
 /* Guide screenshot inline */
 .guide-screenshot {
   margin: 1.5rem 0;
-  border: 1px solid var(--line-strong);
   border-radius: 10px;
   overflow: hidden;
-  background: #171717;
-  box-shadow: var(--shadow-sm);
+  background: var(--bg);
 }
 
 .guide-screenshot img {
