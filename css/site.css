@@ -215,13 +215,6 @@ p.support {
   margin-top: 2rem;
 }
 
-.download-status {
-  margin-top: 0.74rem;
-  min-height: 1.3rem;
-  color: var(--muted);
-  font-size: 0.86rem;
-}
-
 .product-shot {
   overflow: hidden;
 }
@@ -409,10 +402,7 @@ p.support {
 
 .download-inner {
   max-width: var(--max-w);
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 2rem;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .download-inner h2 { margin-top: 0.72rem; }
@@ -423,46 +413,15 @@ p.support {
   line-height: 1.6;
 }
 
-.download-actions {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.72rem;
-}
-
-.download-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  justify-content: flex-end;
-  color: var(--text);
-  font-size: 0.88rem;
-}
-
-.download-links a {
-  border-bottom: 1px solid var(--line-strong);
-  transition: color 0.15s, border-color 0.15s;
-}
-
-.download-links a:hover {
-  color: var(--accent-dark);
-  border-color: var(--accent);
-}
-
-.download-links a[aria-disabled="true"] {
-  color: var(--muted);
-}
-
 .platform-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
   margin-top: 2rem;
-  max-width: 680px;
 }
 
 .platform-card {
-  padding: 1.2rem;
+  padding: 1.35rem;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255,255,255,0.6);
@@ -479,12 +438,89 @@ p.support {
   line-height: 1.5;
 }
 
-.platform-card .coming-soon {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: var(--accent);
-  font-size: 0.82rem;
-  font-weight: 600;
+.platform-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.95rem;
+}
+
+.platform-download {
+  min-height: 36px;
+  padding-inline: 0.9rem;
+  font-size: 0.85rem;
+}
+
+.install-command {
+  display: block;
+  margin: 0;
+  padding: 0.68rem 2.7rem 0.68rem 0.72rem;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(34, 26, 20, 0.05);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  line-height: 1.45;
+  white-space: nowrap;
+}
+
+.command-copy {
+  position: relative;
+  margin-top: 0.72rem;
+}
+
+.copy-command {
+  position: absolute;
+  top: 50%;
+  right: 0.42rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--text);
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.copy-command:hover,
+.copy-command:focus-visible {
+  border-color: var(--accent);
+  background: var(--paper);
+  color: var(--accent-dark);
+}
+
+.copy-command svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.copy-command .check-icon {
+  display: none;
+}
+
+.copy-command.is-copied {
+  border-color: rgba(46, 127, 88, 0.45);
+  color: var(--green);
+}
+
+.copy-command.is-copied .copy-icon {
+  display: none;
+}
+
+.copy-command.is-copied .check-icon {
+  display: block;
 }
 
 /* ─── Footer ─── */
@@ -764,14 +800,6 @@ p.support {
 
   .how-grid {
     grid-template-columns: 1fr;
-  }
-
-  .download-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .download-actions {
-    align-items: flex-start;
   }
 
   .platform-grid {
