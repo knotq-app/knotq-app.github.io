@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="KnotQ is a structured planning and calendar app where each line can become a note, task, event, assignment, or reminder.">
+  <meta name="description" content="KnotQ ties your notes and calendar into one place. Write in documents, schedule from any line, and keep everything connected.">
   <meta name="robots" content="index,follow">
-  <title>KnotQ</title>
+  <title>KnotQ &mdash; Notes and calendar, together</title>
   <link rel="canonical" href="https://www.knotq.com/">
   <meta property="og:site_name" content="KnotQ">
-  <meta property="og:title" content="KnotQ">
-  <meta property="og:description" content="Plan in documents. Schedule from the line. Keep context and calendar in one place.">
+  <meta property="og:title" content="KnotQ &mdash; Notes and calendar, together">
+  <meta property="og:description" content="Your notes are your calendar. Events, assignments, and reminders all in one place. Fully local.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.knotq.com/">
-  <meta property="og:image" content="https://www.knotq.com/img/knotq-packed-calendar.png">
+  <meta property="og:image" content="https://www.knotq.com/img/knotq-calendar.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KnotQ">
-  <meta name="twitter:description" content="Plan in documents. Schedule from the line. Keep context and calendar in one place.">
+  <meta name="twitter:title" content="KnotQ &mdash; Notes and calendar, together">
+  <meta name="twitter:description" content="Your notes are your calendar. Events, assignments, and reminders all in one place. Fully local.">
   <link rel="icon" type="image/svg+xml" href="/img/knotq-logo.svg">
   <link rel="apple-touch-icon" href="/img/knotq-icon.png">
   <link rel="stylesheet" href="/css/site.css">
@@ -27,99 +27,110 @@
       <span>KnotQ</span>
     </a>
     <nav class="top-links" aria-label="primary">
-      <a href="#why">Why</a>
-      <a href="#screens">Screens</a>
+      <a href="/">Home</a>
+      <a href="/guide.html">Guide</a>
       <a href="#download">Download</a>
     </nav>
-    <a class="github-link" href="https://github.com/knotq-app/knotq-app">GitHub</a>
   </header>
 
   <main>
+    <!-- ═══════ Hero ═══════ -->
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">line-first planning</p>
-        <h1>KnotQ</h1>
-        <p class="lead">A productivity app for people whose calendar only makes sense when it stays attached to the plan.</p>
-        <p class="support">Write normally. Add a start or due time to any line when it needs to become real. KnotQ keeps the source document, the calendar, reminders, and daily plan tied together.</p>
+        <p class="eyebrow">general-purpose organization</p>
+        <h1>Your notes<br>are your calendar</h1>
+        <p class="lead">
+            Assignments, reminders, and events all in one calendar</p>
         <div class="hero-actions">
-          <a class="primary-action" href="https://github.com/knotq-app/knotq-app/releases" data-download-button>Download latest</a>
-          <a class="secondary-action" href="#why">Why KnotQ?</a>
+          <a class="primary-action" href="https://github.com/knotq-app/knotq-app/releases" data-download-button>Download</a>
+          <a class="secondary-action" href="/guide.html">Guide</a>
         </div>
-        <p class="download-status" data-download-status>Direct downloads use the latest GitHub release.</p>
+        <p class="download-status" data-download-status></p>
       </div>
-
       <figure class="product-shot">
-        <img src="/img/knotq-packed-calendar.png" alt="A packed KnotQ calendar view with assignments, reminders, and events.">
+        <img src="/img/knotq-calendar.png" alt="KnotQ calendar showing a packed week with classes, meetings, and due assignments.">
       </figure>
     </section>
 
-    <section class="pitch" id="why">
-      <div class="pitch-intro">
-        <p class="eyebrow">the case</p>
-        <h2>Most productivity tools split the work from the time.</h2>
-        <p>KnotQ starts from a different premise: the line where you wrote the work is the canonical object. A date changes how that line behaves, but not where its context lives.</p>
-      </div>
-      <div class="pitch-grid">
-        <article>
-          <span>01</span>
-          <h3>No duplicate task/calendar entry.</h3>
-          <p>A line with a start and end becomes an event. A line with only an end becomes an assignment. A line with only a start becomes a reminder.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Daily planning without copying your life around.</h3>
-          <p>Plan today from the same source documents that hold your projects, notes, and long-running work.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Calendar views keep the trail back.</h3>
-          <p>Every scheduled block can jump back to the originating line, including its nested notes and details.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>The background system stays quiet.</h3>
-          <p>Notifications and automatic completion react to document changes, then use OS scheduling instead of constant polling.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="screens" id="screens">
-      <div class="screen-copy">
-        <p class="eyebrow">actual workflow</p>
-        <h2>A dense calendar when the week is dense.</h2>
-        <p>KnotQ is built for real weeks: overlapping classes, due dates, errands, meetings, and reminders all sharing the same planning surface.</p>
-      </div>
-      <figure class="wide-shot">
-        <img src="/img/knotq-packed-calendar.png" alt="Packed weekly calendar screenshot.">
-      </figure>
-      <div class="split-screens">
-        <figure>
-          <img src="/img/knotq-scheme-editor.png" alt="Scheme editor screenshot with a date picker open.">
-          <figcaption>Schedule directly from the document line.</figcaption>
+    <!-- ═══════ Feature: text + visual ═══════ -->
+    <section class="features" id="features">
+      <div class="feature-block">
+        <figure class="feature-shot">
+          <img src="/img/knotq-editor.png" alt="KnotQ scheme editor showing a product roadmap document with tasks, checkboxes, and inline date pickers.">
         </figure>
-        <div class="screen-note">
-          <p class="eyebrow">documents stay useful</p>
-          <h2>Not every line wants to be a task.</h2>
-          <p>Use the same document for plans, meeting notes, project outlines, loose thoughts, and scheduled commitments. Only the lines with dates show up on the calendar.</p>
+        <div class="feature-text">
+          <h2>Text and visual</h2>
+          <p>Schemes are markdown-like documents that allow you to define calendar events by adding start and end times to individual lines </p>
+          <div class="task-mini">
+            <div class="task-row"><span class="tt-dot tt-event"></span><span class="tt-name">Event</span><span class="tt-def">start + end &rarr; time block</span></div>
+            <div class="task-row"><span class="tt-dot tt-assign"></span><span class="tt-name">Assignment</span><span class="tt-def">end only &rarr; due marker</span></div>
+            <div class="task-row"><span class="tt-dot tt-remind"></span><span class="tt-name">Reminder</span><span class="tt-def">start only &rarr; alert point</span></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="download-band" id="download">
-      <div>
-        <p class="eyebrow">desktop</p>
-        <h2>Download KnotQ for macOS</h2>
-        <p>The main download button chooses the latest release asset it can identify for your platform. If macOS architecture detection is ambiguous, choose explicitly.</p>
+    <!-- ═══════ Feature: Daily Queue ═══════ -->
+    <section class="features">
+      <div class="feature-block feature-block--flip">
+        <figure class="feature-shot">
+          <img src="/img/knotq-daily.png" alt="KnotQ Daily Queue showing today's tasks, notes, and carried-over items from yesterday.">
+        </figure>
+        <div class="feature-text">
+          <h2>Daily Queue</h2>
+          <p>A continual section every day for quick tasks, notes, and brainstorming. </p>
+        </div>
       </div>
-      <div class="download-actions">
-        <a class="primary-action" href="https://github.com/knotq-app/knotq-app/releases" data-download-button>Download latest</a>
-        <div class="download-links" aria-label="macOS downloads">
-          <a href="https://github.com/knotq-app/knotq-app/releases" data-download-arm aria-disabled="true">Apple Silicon</a>
-          <a href="https://github.com/knotq-app/knotq-app/releases" data-download-intel aria-disabled="true">Intel Mac</a>
+    </section>
+
+    <!-- ═══════ Download ═══════ -->
+    <section class="download-band" id="download">
+      <div class="download-inner">
+        <div>
+          <p class="eyebrow">get knotq</p>
+          <h2>Download for desktop</h2>
+
+          <div class="platform-grid">
+            <div class="platform-card">
+              <h3>macOS</h3>
+              <p>Apple Silicon &amp; Intel.</p>
+              <a class="primary-action" href="https://github.com/knotq-app/knotq-app/releases" data-download-button style="margin-top:0.8rem;font-size:0.85rem;min-height:36px;">Download</a>
+            </div>
+            <div class="platform-card">
+              <h3>Windows</h3>
+              <p>x64, via MSIX or portable zip.</p>
+              <span class="coming-soon">Coming soon</span>
+            </div>
+            <div class="platform-card">
+              <h3>Linux</h3>
+              <p>x86_64 tarball.</p>
+              <span class="coming-soon">Coming soon</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-actions">
+          <a class="primary-action" href="https://github.com/knotq-app/knotq-app/releases" data-download-button>Download latest</a>
+          <div class="download-links" aria-label="macOS downloads">
+            <a href="https://github.com/knotq-app/knotq-app/releases" data-download-arm aria-disabled="true">Apple Silicon</a>
+            <a href="https://github.com/knotq-app/knotq-app/releases" data-download-intel aria-disabled="true">Intel Mac</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="/img/knotq-logo.svg" alt="">
+      <span>KnotQ</span>
+    </div>
+    <nav class="footer-links">
+      <a href="/guide.html">Guide</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="https://github.com/knotq-app/knotq-app">GitHub</a>
+    </nav>
+  </footer>
 
   <script src="/js/download.js"></script>
 </body>

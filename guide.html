@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Learn how to use KnotQ — schemes, scheduling, the Daily Queue, and workflows that keep you productive.">
+        <title>Guide &mdash; KnotQ</title>
+        <link rel="icon" type="image/svg+xml" href="/img/knotq-logo.svg">
+        <link rel="apple-touch-icon" href="/img/knotq-icon.png">
+        <link rel="stylesheet" href="/css/site.css">
+    </head>
+    <body>
+        <header class="topbar">
+            <a class="brand" href="/">
+                <img src="/img/knotq-logo.svg" alt="">
+                <span>KnotQ</span>
+            </a>
+            <nav class="top-links" aria-label="primary">
+                <a href="/">Home</a>
+                <a href="/guide.html">Guide</a>
+                <a href="/#download">Download</a>
+            </nav>
+        </header>
+
+        <main class="page-content">
+            <h1>Guide</h1>
+
+            <p>KnotQ is a free productivity app that integrates notes with a calendar for general purpose organization. Everything is fully local and owned by you.</p>
+
+            <!-- ─── Schemes ─── -->
+            <h2>Schemes</h2>
+            <p>Everything lives in a <strong>scheme</strong>&mdash;a markdown-like document. Create one with <strong>+ New</strong> at the bottom of the sidebar or with <code>Cmd+N</code>.</p>
+            <p>Each line has a <strong>marker</strong>: plain (<code>Cmd+1</code>), checkbox (<code>Cmd+2</code>), bullet (<code>Cmd+3</code>), or numbered (<code>Cmd+4</code>). Use <code>Tab</code> / <code>Shift+Tab</code> to indent and create nested structure. Bold with <code>Cmd+B</code>, italic with <code>Cmd+I</code>, heading with <code>Cmd+J</code>.</p>
+
+            <div class="guide-screenshot">
+                <img src="/img/knotq-editor.png" alt="KnotQ scheme editor showing a document with headings, checkboxes, and nested items.">
+            </div>
+
+            <!-- ─── Scheduling ─── -->
+            <h2>Scheduling</h2>
+            <p>Any line can be scheduled by giving it a start time, end time, or both:</p>
+
+            <table class="task-type-table">
+                <thead>
+                    <tr><th>Start</th><th>End</th><th>Type</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Yes</td><td>Yes</td><td><strong>Event</strong> &mdash; time block</td></tr>
+                    <tr><td>No</td><td>Yes</td><td><strong>Assignment</strong> &mdash; deadline</td></tr>
+                    <tr><td>Yes</td><td>No</td><td><strong>Reminder</strong> &mdash; alert</td></tr>
+                    <tr><td>No</td><td>No</td><td><strong>Procedure</strong> &mdash; planning only</td></tr>
+                </tbody>
+            </table>
+
+            <p>Press <code>Cmd+S</code> to set a start date and <code>Cmd+E</code> to set an end date. Both open a popover inline so you can pick a time without leaving the document. Use <code>Cmd+R</code> to add a repeat rule. You can also create items directly from the calendar: click a time slot for a reminder, shift+click for an assignment, or drag for an event.</p>
+
+            <div class="guide-screenshot">
+                <img src="/img/knotq-date-picker.png" alt="KnotQ date picker popover open on a line in the scheme editor.">
+            </div>
+
+            <!-- ─── Daily Queue ─── -->
+            <h2>Daily Queue</h2>
+            <p>The <strong>Daily Queue</strong> gives you a fresh page every day. Incomplete items optionally carry over from the previous day, whereas completed tasks stay behind as a record.</p>
+
+            <div class="guide-screenshot">
+                <img src="/img/knotq-daily.png" alt="KnotQ Daily Queue showing today's task list with carried-over items from yesterday.">
+            </div>
+
+            <p>My workflow: at the start of the day (or the end of yesterday), I write an <strong>optimistic list of concrete, small tasks</strong> I want to finish. It's important these are specific items so that they are actionable. Throughought the day, I go through and check them off as I complete each one.</p>
+
+            <p>The point is that <strong>you never have to make a decision</strong> about what to do next. When you finish a task the next one is right there. The list being optimistic also means it almost always lasts me the entire day.
+            </p>
+
+            <p> Before KnotQ, I found myself in the paradoxcal state of having so many things I need to get done yet not doing anything because everything was such large task. Breaking these into actionable tasks daily helped me a lot. </p>
+
+            <!-- ─── Calendar ─── -->
+            <h2>Calendar</h2>
+            <p>The calendar is a week-view grid that pulls events from all your schemes, color-coded by scheme. Click any event to jump to its source line in the editor. The upcoming panel on the left shows what's due next and is visible on every page.</p>
+
+            <div class="guide-screenshot">
+                <img src="/img/knotq-calendar.png" alt="KnotQ weekly calendar with events, assignments, and reminders from multiple schemes.">
+            </div>
+
+
+            <!-- ─── Google Calendar ─── -->
+            <h2>Google Calendar</h2>
+            <p>KnotQ can display your Google Calendar events alongside your schemes (read-only for now). You can create a new Google Calendar scheme by pressing new in the left sidebar.</p>
+
+            <!-- ─── Search ─── -->
+            <h2>Search</h2>
+            <p>Press <code>Cmd+F</code> to search across all schemes and calendar items.</p>
+
+            <!-- ─── Keyboard shortcuts ─── -->
+            <h2>Keyboard shortcuts</h2>
+            <p>All <code>Cmd</code> shortcuts work as <code>Ctrl</code> on Windows and Linux.</p>
+            <table class="task-type-table">
+                <thead>
+                    <tr><th>Shortcut</th><th>Action</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>Cmd+S</code></td><td>Toggle start date</td></tr>
+                    <tr><td><code>Cmd+E</code></td><td>Toggle end date</td></tr>
+                    <tr><td><code>Cmd+Shift+S</code></td><td>Remove start date</td></tr>
+                    <tr><td><code>Cmd+Shift+E</code></td><td>Remove end date</td></tr>
+                    <tr><td><code>Cmd+R</code></td><td>Toggle repeat rule</td></tr>
+                    <tr><td><code>Cmd+L</code></td><td>Toggle complete/incomplete</td></tr>
+                    <tr><td><code>Cmd+B</code></td><td>Bold</td></tr>
+                    <tr><td><code>Cmd+I</code></td><td>Italic</td></tr>
+                    <tr><td><code>Cmd+J</code></td><td>Heading</td></tr>
+                    <tr><td><code>Cmd+1</code>&ndash;<code>4</code></td><td>Line type: plain / checkbox / bullet / numbered</td></tr>
+                    <tr><td><code>Tab</code></td><td>Indent</td></tr>
+                    <tr><td><code>Shift+Tab</code></td><td>Unindent</td></tr>
+                    <tr><td><code>Cmd+F</code></td><td>Search</td></tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-brand">
+                <img src="/img/knotq-logo.svg" alt="">
+                <span>KnotQ</span>
+            </div>
+            <nav class="footer-links">
+                <a href="/guide.html">Guide</a>
+                <a href="/privacy.html">Privacy</a>
+                <a href="https://github.com/knotq-app/knotq-app">GitHub</a>
+            </nav>
+        </footer>
+    </body>
+</html>
